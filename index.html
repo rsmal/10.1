@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.1</title>
+      
+      <link rel="stylesheet" href="vendor/flickity.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="vendor/normalize.css"> 
+</head>  
+<body> 
+ <style>
+   #carousel-cell1 {
+  background-image: url('https://tinyurl.com/ydfh9r2x');
+}
+
+  #carousel-cell2 {
+  background-image: url('https://tinyurl.com/y8ut3ntp');
+}
+   #carousel-cell3 {
+  background-image: url('https://tinyurl.com/ycpsddow');
+}
+#carousel-cell4 {
+  background-image: url('https://tinyurl.com/y8fahhnp');
+}
+
+#carousel-cell5 {
+  background-image: url('https://tinyurl.com/ybyjxfv6');
+}
+  </style>
+
+<div class="carousel">
+  
+  <div class="carousel-cell" id="carousel-cell1">
+    <div class="container">
+      <p class="carousel__paragraph"> LOREM IPSUM 1 </p>
+    </div>
+  </div>
+
+  <div class="carousel-cell" id="carousel-cell2">
+    <div class="container">
+      <p class="carousel__paragraph"> LOREM IPSUM 2 </p>
+    </div>
+  </div>
+
+  <div class="carousel-cell" id="carousel-cell3">
+    <div class="container">
+      <p class="carousel__paragraph"> LOREM IPSUM 2 </p>
+    </div>
+  </div>
+
+  <div class="carousel-cell" id="carousel-cell4">
+    <div class="container">
+      <p class="carousel__paragraph"> LOREM IPSUM 3 </p>
+    </div>
+  </div>
+
+  <div class="carousel-cell" id="carousel-cell5">
+    <div class="container">
+      <p class="carousel__paragraph"> LOREM IPSUM 4 </p>
+    </div>
+  </div>
+
+</div>
+<div class="button-group">
+  <button class="button">RESTART</button>
+</div>
+
+
+<div class="progress-bar"></div>
+
+<div class="car__links">
+   <a class="links" href="#carousel-cell1">View cell 1</a>
+   <a class="links" href="#carousel-cell2">View cell 2</a>
+   <a class="links" href="#carousel-cell3">View cell 3</a>
+   <a class="links" href="#carousel-cell4">View cell 4</a>
+   <a class="links" href="#carousel-cell5">View cell 5</a>
+   
+</div>
+
+<script src="vendor/flickity.pkgd.min.js"></script>
+<script src="vendor/hash.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
