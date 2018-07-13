@@ -3,7 +3,6 @@ body {
 }
 
 .carousel {
-  margin-top: 10%;
   position: relative;
 }
 
@@ -54,7 +53,7 @@ body {
 
 .button {
   position: absolute;
-  top: 55%;
+  top: 35%;
   left: 90%;
   background-color: lightblue;
   color: black;

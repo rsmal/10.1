@@ -9,53 +9,35 @@
       <link rel="stylesheet" href="vendor/normalize.css"> 
 </head>  
 <body> 
- <style>
-   #carousel-cell1 {
-  background-image: url('https://tinyurl.com/ydfh9r2x');
-}
 
-  #carousel-cell2 {
-  background-image: url('https://tinyurl.com/y8ut3ntp');
-}
-   #carousel-cell3 {
-  background-image: url('https://tinyurl.com/ycpsddow');
-}
-#carousel-cell4 {
-  background-image: url('https://tinyurl.com/y8fahhnp');
-}
-
-#carousel-cell5 {
-  background-image: url('https://tinyurl.com/ybyjxfv6');
-}
-  </style>
 
 <div class="carousel">
   
-  <div class="carousel-cell" id="carousel-cell1">
+  <div class="carousel-cell" id="carousel-cell1" style="background-image: url('https://tinyurl.com/ydfh9r2x')">
     <div class="container">
       <p class="carousel__paragraph"> LOREM IPSUM 1 </p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell2">
+  <div class="carousel-cell" id="carousel-cell2" style="background-image: url('https://tinyurl.com/ydfh9r2x')">
     <div class="container">
       <p class="carousel__paragraph"> LOREM IPSUM 2 </p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell3">
+  <div class="carousel-cell"  id="carousel-cell3"style="background-image: url('https://tinyurl.com/ycpsddow')">
     <div class="container">
       <p class="carousel__paragraph"> LOREM IPSUM 2 </p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell4">
+  <div class="carousel-cell" id="carousel-cell4" style="background-image: url('https://tinyurl.com/y8fahhnp')">
     <div class="container">
       <p class="carousel__paragraph"> LOREM IPSUM 3 </p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell5">
+  <div class="carousel-cell" id="carousel-cell5" style="background-image: url('https://tinyurl.com/ybyjxfv6')">
     <div class="container">
       <p class="carousel__paragraph"> LOREM IPSUM 4 </p>
     </div>
@@ -78,8 +60,45 @@
    
 </div>
 
+
+<script>
+var carouselData = [
+  {
+    image: '', 
+    title: 'Lorem 1',
+    description: 'ipsum 1'
+  },
+  {
+    image: 'Football', 
+    title: 'Lorem 2',
+    description: 'ipsum 2'
+  },
+  {
+    image: 'Football', 
+    title: 'Lorem 3',
+    description: 'ipsum 3'
+  },
+   {
+    image: 'Football', 
+    title: 'Lorem 4',
+    description: 'ipsum 4'
+  },
+   {
+    image: 'Football', 
+    title: 'Lorem 5',
+    description: 'ipsum 5'
+  },
+];
+</script>
+
+
+
+
+
+
 <script src="vendor/flickity.pkgd.min.js"></script>
 <script src="vendor/hash.js"></script>
+<script src="vendor/mustache.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
