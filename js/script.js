@@ -4,6 +4,12 @@ var flkty = new Flickity( '.carousel', {
   cellAlign: 'left',
 });
 
+var flkty = new Flickity( '.carousel2', {
+  hash: true,
+  cellAlign: 'left',
+});
+
+
 var progressBar = document.querySelector('.progress-bar')
 
 flkty.on( 'scroll', function( progress ) {
@@ -27,10 +33,8 @@ buttonGroup.addEventListener( 'click', function( event ) {
 
 
 
-
-
-var templateList = document.getElementById('template-carousel-list').innerHTML;
-var templateItem = document.getElementById('template-carousel-item').innerHTML;
+	var templateList = document.getElementById('template-carousel-list').innerHTML;
+	var templateItem = document.getElementById('template-carousel-item').innerHTML;
 	
 	// Następnie zoptymalizujemy drugą z nich, ponieważ tylko ona będzie wykonywana wielokrotnie. 	
 
@@ -59,4 +63,4 @@ var templateItem = document.getElementById('template-carousel-item').innerHTML;
 	// I w pełni wyrenderowaną listę wyświetlimy na stronie: 
 	
 	results.insertAdjacentHTML('beforeend', fullProductList);
-
+	
