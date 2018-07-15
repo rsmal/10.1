@@ -10,39 +10,38 @@
 </head>  
 <body> 
 
-<div class="carousel">
-  
-  <div class="carousel-cell" id="carousel-cell1" style="background-image: url('https://tinyurl.com/ydfh9r2x')">
-    <div class="container">
-      <p class="carousel__paragraph"> LOREM IPSUM 1 </p>
+     <div id="result" class="carousel" >
     </div>
-  </div>
-
-  <div class="carousel-cell" id="carousel-cell2" style="background-image: url('https://tinyurl.com/ydfh9r2x')">
-    <div class="container">
-      <p class="carousel__paragraph"> LOREM IPSUM 2 </p>
+<script id="template-list" type="x-tmpl-mustache">
+    {{{carousel}}}
+</script>
+ 
+<script id="template-slide" type="x-tmpl-mustache">
+    <div class="carousel-cell" style="background-image: url('{{image}}')">
+        <p class="carousel__paragraph">{{text}}</p>
     </div>
-  </div>
+</script>
 
-  <div class="carousel-cell"  id="carousel-cell3"style="background-image: url('https://tinyurl.com/ycpsddow')">
-    <div class="container">
-      <p class="carousel__paragraph"> LOREM IPSUM 2 </p>
-    </div>
-  </div>
+      <script>
+          var carouselData = [{
+              text: 'Lorem ipsum ',
+              image: 'https://tinyurl.com/ydfh9r2x',
+          }, {
+              text: 'Lorem ipsum 1',
+              image: 'https://tinyurl.com/ycpsddow'
+          }, {
+              text: 'Lorem ipsum 2',
+              image: 'https://tinyurl.com/y8fahhnp'
+          }, {
+              text: 'Lorem ipsum 3',
+              image: 'https://tinyurl.com/y8fahhnp'
+          }, {
+              text: 'Lorem ipsum 4',
+              image: 'https://tinyurl.com/ydfh9r2x'
+          }];
+      </script>
 
-  <div class="carousel-cell" id="carousel-cell4" style="background-image: url('https://tinyurl.com/y8fahhnp')">
-    <div class="container">
-      <p class="carousel__paragraph"> LOREM IPSUM 3 </p>
-    </div>
-  </div>
 
-  <div class="carousel-cell" id="carousel-cell5" style="background-image: url('https://tinyurl.com/ybyjxfv6')">
-    <div class="container">
-      <p class="carousel__paragraph"> LOREM IPSUM 4 </p>
-    </div>
-  </div>
-
-</div>
 <div class="button-group">
   <button class="button">RESTART</button>
 </div>
@@ -57,55 +56,6 @@
    <a class="links" href="#carousel-cell5">View cell 5</a>
    
 </div>
-
-
-<div class="carousel2">
-  <div id="results"></div>
-</div>
-
-<script id="template-carousel-list" type="x-tmpl-mustache">
-  {{{products}}}
-</script>
-
-
-<script id="template-carousel-item" type="x-tmpl-mustache">
-<div class="carousel-cell" id='{{id}}'style="background-image: url('{{image}}')">
-  <div class="container"> 
-    <p class="carousel__paragraph2"> {{name}} <br> {{price}} <br> {{test}} </p>
-  </div>
-</div> 
-</script>
-
-
-
-<script>
-var productsData = [
-  {
-    name: 'Football', 
-    price: '$10',
-    test: 'test',
-    id: 'carousel-cell1',
-    image: 'https://tinyurl.com/ydfh9r2x'
-
-  },
-  {
-    name: 'Volleyball', 
-    price: '$8',
-    test: 'test1',
-     id: 'carousel-cell2',
-    image: 'https://tinyurl.com/ybyjxfv6'
-  },
-  {
-    name: 'Basketball', 
-    price: '$12',
-    test: 'test2',
-    id: 'carousel-cell3',
-    image: 'https://tinyurl.com/y8fahhnp'
-  }
-];
-</script>
-
-
 
 <script src="vendor/flickity.pkgd.min.js"></script>
 <script src="vendor/hash.js"></script>
