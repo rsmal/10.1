@@ -19,6 +19,9 @@
 <script id="template-slide" type="x-tmpl-mustache">
     <div class="carousel-cell" id="{{id}}"style="background-image: url('{{image}}')">
         <p class="carousel__paragraph">{{text}}</p>
+        <div class= 'description'>
+          {{{description}}}
+        </div>
     </div>
 </script>
 
@@ -26,23 +29,28 @@
           var carouselData = [{
               text: 'Lorem ipsum ',
               image: 'https://tinyurl.com/ydfh9r2x',
-              id: 'carousel-cell1'
+              id: 'carousel-cell1',
+              description: ' <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
           }, {
               text: 'Lorem ipsum 1',
               image: 'https://tinyurl.com/ycpsddow',
-              id: 'carousel-cell2'
+              id: 'carousel-cell2',
+              description: ' <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
           }, {
               text: 'Lorem ipsum 2',
               image: 'https://tinyurl.com/y8fahhnp',
-              id: 'carousel-cell3'
+              id: 'carousel-cell3',
+              description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p> '
           }, {
               text: 'Lorem ipsum 3',
               image: 'https://tinyurl.com/y8fahhnp',
-              id: 'carousel-cell4'
+              id: 'carousel-cell4',
+              description: ' <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
           }, {
               text: 'Lorem ipsum 4',
               image: 'https://tinyurl.com/ydfh9r2x',
-              id: 'carousel-cell5'
+              id: 'carousel-cell5',
+              description: ' <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
           }];
       </script>
 
