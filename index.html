@@ -58,6 +58,88 @@
    
 </div>
 
+
+
+
+
+
+
+
+<div class="carousel">
+  <div id="results"></div>
+</div>
+
+<script id="template-carousel-list" type="x-tmpl-mustache">
+ <div class="carousel-cell" style="background-image: url('https://tinyurl.com/ydfh9r2x')">
+    {{{products}}}
+</div> 
+
+ <div class="carousel-cell" style="background-image: url('https://tinyurl.com/ybyjxfv6')">
+    {{{products}}}
+</div> 
+
+</script>
+
+<script id="template-carousel-item" type="x-tmpl-mustache">
+<div class="container"> 
+ <p class="carousel__paragraph2"> {{name}} <br> {{price}} <br> {{test}} </p>
+</div>
+</script>
+
+
+<script>
+var productsData = [
+  {
+    name: 'Football', 
+    price: '$10',
+    test: 'test'
+
+  },
+  {
+    name: 'Volleyball', 
+    price: '$8',
+    test: 'test1'
+  },
+  {
+    name: 'Basketball', 
+    price: '$12',
+    test: 'test2'
+  },
+    {
+    name: 'Basketball', 
+    price: '$12',
+    test: 'test3'
+  },
+    {
+    name: 'Basketball', 
+    price: '$12',
+    test: 'test4'
+  }
+
+];
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="vendor/flickity.pkgd.min.js"></script>
 <script src="vendor/hash.js"></script>
 <script src="vendor/mustache.js"></script>

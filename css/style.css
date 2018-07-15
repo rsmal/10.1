@@ -12,6 +12,8 @@ body {
   height: 500px;
   /* height of carousel */
   margin-right: 10px;
+  background-position: center;
+  background-size: cover;
 }
 
 .links {
@@ -23,11 +25,6 @@ body {
   text-align: center;
 }
 
-#carousel-cell1, #carousel-cell2, #carousel-cell3, #carousel-cell4, #carousel-cell5 {
-  background-position: center;
-  background-size: cover;
-}
-
 .container {
   margin: 0 auto;
   margin-top: 10%;
@@ -37,6 +34,12 @@ body {
 .carousel__paragraph {
   font-size: 30px;
   color: white;
+  text-align: center;
+}
+
+.carousel__paragraph2 {
+  font-size: 30px;
+  color: red;
   text-align: center;
 }
 
