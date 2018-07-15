@@ -1,3 +1,22 @@
+
+var templateList = document.getElementById('template-list').innerHTML;
+var templateItem = document.getElementById('template-slide').innerHTML;
+    Mustache.parse(templateItem);
+ 
+    var listItems = '';
+ 
+    for (var i = 0; i < carouselData.length; i++) {
+        console.log(carouselData);
+        listItems += Mustache.render(templateItem, carouselData[i]);
+    }
+ 
+    var fullProductList = Mustache.render(templateList, {carousel: listItems });
+    result.insertAdjacentHTML('beforeend', fullProductList);
+
+
+
+
+
 // vanilla JS
 var flkty = new Flickity( '.carousel', {
   hash: true,
@@ -25,16 +44,3 @@ buttonGroup.addEventListener( 'click', function( event ) {
 });
 
 
-var templateList = document.getElementById('template-list').innerHTML;
-var templateItem = document.getElementById('template-slide').innerHTML;
-    Mustache.parse(templateItem);
- 
-    var listItems = '';
- 
-    for (var i = 0; i < carouselData.length; i++) {
-        console.log(carouselData);
-        listItems += Mustache.render(templateItem, carouselData[i]);
-    }
- 
-    var fullProductList = Mustache.render(templateList, {carousel: listItems });
-    result.insertAdjacentHTML('beforeend', fullProductList);

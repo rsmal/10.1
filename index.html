@@ -17,7 +17,7 @@
 </script>
  
 <script id="template-slide" type="x-tmpl-mustache">
-    <div class="carousel-cell" style="background-image: url('{{image}}')">
+    <div class="carousel-cell" id="{{id}}"style="background-image: url('{{image}}')">
         <p class="carousel__paragraph">{{text}}</p>
     </div>
 </script>
@@ -26,18 +26,23 @@
           var carouselData = [{
               text: 'Lorem ipsum ',
               image: 'https://tinyurl.com/ydfh9r2x',
+              id: 'carousel-cell1'
           }, {
               text: 'Lorem ipsum 1',
-              image: 'https://tinyurl.com/ycpsddow'
+              image: 'https://tinyurl.com/ycpsddow',
+              id: 'carousel-cell2'
           }, {
               text: 'Lorem ipsum 2',
-              image: 'https://tinyurl.com/y8fahhnp'
+              image: 'https://tinyurl.com/y8fahhnp',
+              id: 'carousel-cell3'
           }, {
               text: 'Lorem ipsum 3',
-              image: 'https://tinyurl.com/y8fahhnp'
+              image: 'https://tinyurl.com/y8fahhnp',
+              id: 'carousel-cell4'
           }, {
               text: 'Lorem ipsum 4',
-              image: 'https://tinyurl.com/ydfh9r2x'
+              image: 'https://tinyurl.com/ydfh9r2x',
+              id: 'carousel-cell5'
           }];
       </script>
 
